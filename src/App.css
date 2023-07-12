@@ -1,0 +1,31 @@
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.router{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 50px 0;
+}
+
+.router-item{
+  cursor: pointer;
+  margin-left: 20px;
+  border-bottom: 1px solid white;
+  padding: 0 4px;
+}
+
+.router-item:hover{
+  color: dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+}
+
+.router-item.active{
+  color: dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+}
