@@ -38,7 +38,8 @@ function OLCSMap(props) {
             layers: [
                 new olLayerTile({
                     source: new XYZ({
-                        url: 'https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+                        url: 'https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        maxZoom: 18,
                     })
                 })
             ],
@@ -75,7 +76,7 @@ function OLCSMap(props) {
     return (
         <div style={{ display: 'flex', transform: `translateX(${translate_x}px)` }}>
             <div id="olcs-map" style={{ width: `${map_width}px`, height: `${map_height}px`, border: '1px solid #fff' }}></div>
-            <div style={{ height: `${map_height}px`, margin: `0 ${map_margin_controls/2.0}px`, border: '0.2px solid #aaa' }}></div>
+            <div style={{ height: `${map_height}px`, margin: `0 ${map_margin_controls / 2.0}px`, border: '0.2px solid #aaa' }}></div>
             <div id="olcs-map-controls" style={{ width: `${controls_width}px`, height: `${map_height}px` }}>
                 {props.children}
             </div>
