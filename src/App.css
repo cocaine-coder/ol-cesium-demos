@@ -29,3 +29,10 @@
   color: dodgerblue;
   border-bottom: 1px solid dodgerblue;
 }
+
+.features-content{
+  margin: 4px 0 4px 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 14px;
+}

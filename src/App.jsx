@@ -4,7 +4,7 @@ import demos from './demos'
 
 function App() {
   const keys = Object.getOwnPropertyNames(demos);
-  const [currentKey, setCurrentKey] = createSignal(keys[0]);
+  const [currentKey, setCurrentKey] = createSignal(keys[1]);
 
   return (
     <>
